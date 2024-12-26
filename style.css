@@ -43,43 +43,27 @@ nav{
 }
 #menu a{
     text-decoration: none;
-    color: #fff;
-    padding: 20px;
+    color: #fff!important;
+    padding: 20px 10% 20px 10%;
 }
-#menu .active, #menu a:hover{color: var(--narinci);}
-.fordesktop{display: none;}
-.nav button{
+#menu .active, #menu a:hover{color: var(--narinci)!important;}
+.fordesktop{display: none!important;}
+nav .fordesktop, .formobile {
     border: none;
     padding: 10px 20px;
-    background-color:var(--narinci);
+    background-color:var(--narinci)!important;
     color: #fff;
     text-transform:uppercase ;
     transition: 0.3s;
     font-weight: 600;
 }
-.nav button:hover{
-    background-color: #fff;
+nav .fordesktop:hover, .formobile:hover{
+    background-color: #fff!important;
     color: var(--narinci);
 }
-#burgerbtn{display: none!important;}
-#burgerbtn~label{
-    display: flex!important;
-    flex-direction: column;
-    gap: 5px;
-    div{
-        width: 20px;
-        height: 3px;
-        background-color: #fff;
-    }
-}
-#burgerbtn:checked~ul{
-    display: flex!important;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    background: #000;
-}
+.offcanvas{background-color: #000!important;}
+.offcanvas-body a{color: #fff!important;}
+nav-link{color: #fff;}
 #carouselExampleIndicators{position: relative;}
 .carousel-indicators button{
     width: 10px!important;
@@ -211,7 +195,6 @@ header:hover .carousel-control-next{opacity: 1!important;}
 .special{
     margin: 30px!important;
     margin: auto;
-    /* width: 100%!important; */
     margin: auto;
     height: 100%!important;
 }
@@ -644,11 +627,15 @@ footer ul a:hover{color: #a44c04!important;}
 footer .col{width: 100%;}
 @media only screen and (min-width:768px) {
     header{clip-path: polygon(100% 0, 100% 82%, 0 100%, 0 0);}
-    nav{background-color: initial;}
+    nav{background-color: #ffffff00!important;}
     #menu{
         display: flex!important;
         flex-direction: row;
     }
+    #burgerbtn~label{display: none!important;}
+    .formobile{display: none!important;}
+    .fordesktop{display: inline-block!important;}
+    .navbar-toggler{display: none!important;}
     #burgerbtn~label{display: none!important;}
     .formobile{display: none;}
     .fordesktop{display: inline-block!important;}
