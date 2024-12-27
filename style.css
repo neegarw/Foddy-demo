@@ -129,7 +129,7 @@ header:hover .carousel-control-next{opacity: 1!important;}
     justify-content: space-between;
     align-items: start;
     gap: 3px;
-    padding: 50px 10px;
+    padding: 50px 20px;
 }
 .main1{
     padding: 0 0 150px 0;
@@ -495,9 +495,9 @@ header:hover .carousel-control-next{opacity: 1!important;}
     position: absolute;
     display: block;
     width: 100%;
-    height: 200px;
+    height: 300px;
     transform: scale(1.2) rotate(-4deg);
-    top: 90%;
+    top: 95%;
     content: '';
     z-index: -1;
     background-color: #F8F9FA;
